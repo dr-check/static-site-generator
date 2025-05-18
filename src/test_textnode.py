@@ -25,7 +25,7 @@ class TestTextNode(unittest.TestCase):
         
     def test_neq_different_text(self):
         # Test inequality with different text
-        node7 = TextNode("This is a different text node", TextType.NORMAL, url="http://example.com")
+        node7 = TextNode("This is a different text node", TextType.TEXT, url="http://example.com")
         node8 = TextNode("This is a different text node", TextType.BOLD, url="http://example.com")
         self.assertNotEqual(node7, node8)
 
